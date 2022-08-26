@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home page</title>
+  <script src="https://kit.fontawesome.com/ef5a90358f.js" crossorigin="anonymous"></script>
+
+  <script>
+    function myFunction() {
+      alert("we just run the function ");
+    }
+  </script>
+
+
+  <style>
+    body {
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      background-color: #f5f5f5;
+      height: 80px;
+    }
+
+    .header .logo {
+      font-size: 40px;
+      color: #000000;
+      padding: 21px 30px;
+    }
+
+    .button {
+      background-color: #f5f5f5;
+      color: black;
+      border: none;
+      padding: 25px 32px;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+    }
+
+
+    .button:hover {
+      background-color: #e7e7e7;
+    }
+
+
+    .intro {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 500px;
+      background: url("https://media.istockphoto.com/videos/mens-hands-are-typing-on-the-laptop-keyboard-closeup-video-id1186325137?s=640x640");
+      background-size: cover;
+      background-position: center;
+
+    }
+
+    .intro h1 {
+      font-family: sans-serif;
+      font-size: 150px;
+      color: #fff;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    .intro p {
+      font-size: 20px;
+      color: #fff;
+      text-transform: uppercase;
+      margin: 20px 0;
+    }
+
+    .intro button {
+      background-color: #3b4b7c;
+      color: #fff;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 5px;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0px 0px 20px #c4c0c0;
+    }
+
+
+
+    .web {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 40px 80px;
+    }
+
+    .web .lang {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 40px;
+    }
+
+    .web .lang i {
+      width: fit-content;
+      font-size: 60px;
+      color: #3b4b7c;
+      padding: 12px;
+    }
+
+    .web .lang .lang-heading {
+      font-size: 20px;
+      color: #333333;
+      text-transform: uppercase;
+      margin: 10px 0;
+    }
+
+    .web .lang .lang-text {
+      font-size: 15px;
+      color: #585858;
+      margin: 10px 0;
+    }
+
+    .about-me {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 80px;
+      border-top: 10px solid #eeeeee;
+    }
+
+    .about-me img {
+      width: 500px;
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #3b4b7c;
+      padding: 40px 80px;
+    }
+
+    .copy {
+      color: #fff;
+      font-size: 30px;
+    }
+
+    .links span {
+      font-size: 25px;
+      color: #fff;
+      text-transform: uppercase;
+      margin: 20px 0;
+    }
+
+    .links a {
+
+      text-decoration: none;
+      color: #c4c0c0;
+      padding: 10px 20px;
+      margin: 20px;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 0;
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="header">
+    <a class="logo"> <i class="fa-solid fa-code"></i></a>
+
+    <nav class="nav-items">
+      <button class="button">Home</button>
+      <button class="button">About</button>
+      <button class="button">Contact</button>
+
+    </nav>
+  </header>
+  <main>
+    <div class="intro">
+      <h1>Hello </h1>
+      <p>This is my first websites.</p>
+      <button onclick="myFunction()">Learn More</button>
+    </div>
+    <div class="web">
+      <div class="lang">
+        <i class="fa-brands fa-html5"></i>
+        <p class="lang-heading">HTML</p>
+        <p class="lang-text"> HTML is the standard markup language for Web pages.</p>
+      </div>
+      <div class="lang">
+        <i class="fa-brands fa-css3-alt"></i>
+        <p class="lang-heading">CSS</p>
+        <p class="lang-text">CSS is the language we use to style an HTML document. </p>
+      </div>
+      <div class="lang">
+        <i class="fa-brands fa-js"></i>
+        <p class="lang-heading">JavaScript</p>
+        <p class="lang-text">JavaScript is the world's most popular programming language</p>
+      </div>
+      <div class="lang">
+        <i class="fa-brands fa-php"></i>
+        <p class="lang-heading">Php</p>
+        <p class="lang-text">PHP is a server scripting language, and a powerful tool for making dynamic and interactive
+          Web pages. </p>
+      </div>
+    </div>
+    <div class="about-me">
+      <div class="about-me-text">
+        <h2>About Me</h2>
+        <p>I'm a Computer Scince Student </p>
+      </div>
+      <img src="work.jpg">
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="copy">&copy; 2022 Student</div>
+
+
+    <div class="links">
+      <span>Social Media</span>
+
+      <a href="#"><i class="fa fa-twitter"> Twitter</i></a>
+      <a href="#"><i class="fa fa-instagram"> Instgram</i></a>
+      <a href="#"><i class="fa fa-facebook"> Facebook</i></a>
+      <a href="#"><i class="fa fa-github"> Github</i></a>
+
+    </div>
+
+  </footer>
+
+</body>
+
+</html>
